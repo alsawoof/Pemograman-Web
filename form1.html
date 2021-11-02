@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORMULIR PPDB</title>
+</head>
+<style>
+h1 {
+	text-align: center;
+}
+table {
+	font-family:arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	
+}
+
+td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid black;
+}
+th {
+	padding: 8px;
+	border: 1px solid black;
+	text-align: left;
+}
+p {
+	text-align: center;
+}
+.tab1 {
+            display: inline-block;
+            margin-left: 100px;
+        }
+.tab2 {
+			display: inline-block;
+			margin-right: 170px;
+		}
+.tab3 {
+			display: inline-block;
+            margin-left: 40px;
+}
+.tab4 {
+			display: inline-block;
+            margin-left: 75px;
+}
+</style>
+<body>
+		<h1>FORMULIR PPDB JALUR ZONASI TAHUN 2020</h1>
+		<table>
+		<tr>
+			<th>Nomor</th>
+			<th>INFO PENDAFTARAN</th>
+		</tr>
+		<form>
+		<tr>
+			<label>
+			<td><p>1</p></td>
+			<td>NISN<span class="tab1"></span>  :
+			<input type="text" name="NISN" /> 
+			</td>
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>2</p></td>
+			<td>Asal Sekolah <span class="tab3"> </span> :
+			<input type="text" name="Asal Sekolah" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label for="files"> 
+			<td><p>3</p></td>
+			<td>Tahun Lulus<span class="tab3"></span>&emsp;:
+			<input type="text" name="Tahun Lulus"  />
+			<i><span class="tab2"> </span>&ensp;(lampirkan foto copy ijazah)</i>
+			<input type="file" id="files" name="files">
+			</td>
+			</label>
+		</tr>
+		<th colspan="2">DATA CALON PESERTA
+		</th>
+		<tr>
+			<label>
+			<td><p>6</p></td>
+			<td>Nama Lengkap<span class="tab3"></span>&ensp;:
+			<input type="text" name="Nama Lengkap" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>7</p></td>
+			<td>NIK <span class="tab1"></span>&emsp;&ensp;:
+			<input type="text" name="NIK" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>8</p></td>
+			<td>Tempat/Tanggal Lahir :
+			<input type="date" id="datemax" name="datemax" max="2021-11-02" /> 
+			<span class="tab2"></span><span class="tab3"></span>Umur :
+			<input type="text" name="Umur" maxlength="2" size="2"/> 
+			Tahun
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label for="files">
+			<td> </td>
+			<td>Foto Copy Akte Kelahiran Yang Telah Dilegalisir <i>(Di lampirkan)</i>
+			<input type="file" id="files" name="files">
+			</td> 
+			</label>
+		</tr>
+		<tr>
+		<label>
+			<td><p>9</p></td>
+			<td>Jenis Kelamin <span class="tab3"></span>&emsp;:
+			<select name="gender" id="gender">
+				<option value="Laki-Laki">Laki-Laki</option>
+				<option value="Perempuan">Perempuan</option>
+			</select>
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>10</p></td>
+			<td>Alamat <span class="tab1"></span> :
+			<input type="text" name="Alamat" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>11</p></td>
+			<td><span class="tab1"></span>&emsp; Desa/Kel <span class="tab4"></span>&emsp;:
+			<input type="text" name="Desa/Kel" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>12</p></td>
+			<td><span class="tab1"></span>&emsp; Kecamatan <span class="tab4"></span>:
+			<input type="text" name="Kecamatan" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>13</p></td>
+			<td><span class="tab1"></span>&emsp; Kabupaten/Kota <span class="tab3"></span>:
+			<input type="text" name="Kabupaten" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>14</p></td>
+			<td><span class="tab1"></span>&emsp; Provinsi<span class="tab1"></span>:
+			<input type="text" name="Provinsi" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>15</p></td>
+			<td>Email Aktif <span class="tab4"></span> :
+			<input type="text" name="email" placeholder="xxxx@email.com"/> 
+			</td> 
+			</label>
+		</tr>
+		<th colspan="2">DATA ORANG TUA <i>(lampirkan KK)</i>
+		<input type="file" id="files" name="files">
+		</th>
+		<tr>
+			<label>
+			<td><p>16</p></td>
+			<td>Nomor Kartu Keluarga :
+			<input type="text" name="NomorKK" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>17</p></td>
+			<td>Nama Ayah Kandung &ensp;:
+			<input type="text" name="NamaAyah" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>18</p></td>
+			<td>Agama <span class="tab1"></span>&ensp;:
+			<select name="Agama" id="Agama">
+				<option value="Islam">Islam</option>
+				<option value="Kristen">Kristen</option>
+				<option value="Katolik">Katolik</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Lainnya">Lainnya</option>
+			</select>
+			<input type="text" name="Agama" placeholder="Lainnya.." /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>19</p></td>
+			<td>Pekerjaan <span class="tab4"></span>&ensp; :
+			<input type="text" name="Pekerjaan" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>20</p></td>
+			<td>Nama Ibu Kandung &emsp; :
+			<input type="text" name="NamaIbu" /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>21</p></td>
+			<td>Agama <span class="tab1"></span>&ensp;:
+			<select name="Agama" id="Agama">
+				<option value="Islam">Islam</option>
+				<option value="Kristen">Kristen</option>
+				<option value="Katolik">Katolik</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Lainnya">Lainnya</option>
+			</select>
+			<input type="text" name="Agama" placeholder="Lainnya.." /> 
+			</td> 
+			</label>
+		</tr>
+		<tr>
+			<label>
+			<td><p>22</p></td>
+			<td>Pekerjaan <span class="tab4"></span>&ensp; :
+			<input type="text" name="Pekerjaan" /> 
+			</td> 
+			</label>
+		</tr>
+		<label>
+			<td><p>23</p></td>
+			<td>Alamat Orang Tua &emsp;&ensp; :
+			<input type="text" name="Alamat" /> 
+			</td> 
+			</label>
+		</tr>
+		<label>
+			<td><p>24</p></td>
+			<td><span class="tab1"></span>&emsp; Desa/Kel<span class="tab4"></span>&emsp;:
+			<input type="text" name="Desa/Kel" /> 
+			</td> 
+			</label>
+		</tr>
+		<label>
+			<td><p>25</p></td>
+			<td><span class="tab1"></span>&emsp; Kecamatan<span class="tab4"></span>:
+			<input type="text" name="Kecamatan" /> 
+			</td> 
+			</label>
+		</tr>
+		<label>
+			<td><p>26</p></td>
+			<td><span class="tab1"></span>&emsp; Kabupaten/Kota<span class="tab3"></span>:
+			<input type="text" name="Kabupaten/Kota" /> 
+			</td> 
+			</label>
+		</tr>
+		<label>
+			<td><p>27</p></td>
+			<td><span class="tab1"></span>&emsp; Provinsi <span class="tab4"></span>&emsp;:
+			<input type="text" name="Provinsi" /> 
+			</td> 
+			</label>
+		</tr>
+		</form>
+		</table>
+		
+		<form>
+		<br>
+		<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
